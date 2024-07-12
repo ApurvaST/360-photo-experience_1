@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>360-Degree Photo Experience</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- 360-Degree Photo -->
+        <a-sky src="IMG20240706151059.jpg"></a-sky>
+        <!-- Hotspot Example -->
+        <a-entity position="1 1.6 -3" geometry="primitive: sphere; radius: 0.1" material="color: red">
+            <a-animation attribute="scale" dur="1000" fill="forwards" to="1.2 1.2 1.2" direction="alternate" repeat="indefinite"></a-animation>
+            <a-text value="Tree Plantation Area" position="0 0.2 0" align="center" scale="2 2 2" color="#FFFFFF"></a-text>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
